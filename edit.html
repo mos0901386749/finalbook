@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>SE Book Store</title>
+  </head>
+  <body onload="init()">
+    <h1>SE Book Store</h1>
+    <div class="row form">
+        <div class="col-6 card justify-content-center">
+            <h5 class="card-header">แก้ไขข้อมูลหนังสือ</h5>
+            <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="title">ชื่อหนังสือ:</label>
+                    <input type="text" class="form-control" id="title" placeholder="Book Title" />
+                  </div>
+                  <div class="form-group">
+                    <label for="isbn">รหัสหนังสือ:</label>
+                    <input type="text" class="form-control" id="isbn" placeholder="Book Isbn" />
+                  </div>
+                  <div class="form-group">
+                    <label for="pageCount">จำนวนหน้าทั้งหมด:</label>
+                    <input type="text" class="form-control" id="pageCount" placeholder="Book PageCount" />
+                  </div>
+                  <div class="form-group">
+                    <label for="publishedDate">วันที่ตีพิมพ์:</label>
+                                <input type=" text" class="form-control" id="publishedDate" placeholder="Book PublishedDate" />
+                  </div>
+                  <div class="form-group">
+                    <label for="thumbnailUrl">ลิงค์รูปภาพหน้าปก:</label>
+                              <input type=" text" class="form-control" id="thumbnailUrl" placeholder="Book ThumbnailUrl" />
+                  </div>
+                  <div class="form-group">
+                    <label for="shortDescription">คำอธิบายแบบย่อ:</label>
+                            <input type=" text" class="form-control" id="shortDescription" placeholder="Book ShortDescription" />
+                  </div>
+                  <div class="form-group">
+                    <label for="longDescription">คำอธิบายแบบยาว:</label>
+                          <input type=" text" class="form-control" id="longDescription" placeholder="Book LongDescription" />
+                  </div>
+                  <div class="form-group">
+                    <label for="Status">สถานะของหนังสือ:</label>
+                        <input type=" text" class="form-control" id="Status" placeholder="Book Status" />
+                  </div>
+                  <div class="form-group">
+                    <label for="Authors">รายชื่อผู้แต่ง:</label>
+                      <input type=" text" class="form-control" id="Authors" placeholder="Book Authors" />
+                  </div>
+                  <div class="form-group">
+                    <label for="Categories">ประเภทหนังสือ:</label>
+                    <input type=" text" class="form-control" id="Categories" placeholder="Book Categories" />
+                  </div>
+                    <a href="#" class="btn btn-success" onclick="edit()">บันทึกการแก้ไข</a>
+                    <a href="index.html" class="btn btn-danger">ยกเลิก</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="edit.js"></script>
+  </body>
+</html>

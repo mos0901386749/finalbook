@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css" />
+  <title>SE Book Store</title>
+</head>
+
+<body>
+  <h1>SE Book Store</h1>
+  <div class="row form">
+    <div class="col-6 card justify-content-center">
+      <h5 class="card-header">เพิ่มหนังสือใหม่</h5>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label for="id">ชื่อหนังสือ:</label>
+            <input type="text" class="form-control" id="title" placeholder="ชื่อหนังสือ" />
+          </div>
+          <div class="form-group">
+            <label for="name">รหัสหนังสือ:</label>
+            <input type="text" class="form-control" id="isbn" placeholder="รหัสหนังสือ" />
+          </div>
+          <div class="form-group">
+            <label for="type">จำนวนหน้าทั้งหมด:</label>
+            <input type="text" class="form-control" id="pageCount" placeholder="จำนวนหน้าทั้งหมด" />
+          </div>
+          <div class="form-group">
+            <label for="image"">วันที่ตีพิมพ์:</label>
+                        <input type=" text" class="form-control" id="publishedDate" placeholder="วันที่ตีพิมพ์" />
+          </div>
+          <div class="form-group">
+            <label for="image"">ลิงค์รูปภาพหน้าปก:</label>
+                      <input type=" text" class="form-control" id="thumbnailUrl" placeholder="ลิงค์รูปภาพหน้าปก" />
+          </div>
+          <div class="form-group">
+            <label for="image"">คำอธิบายแบบย่อ:</label>
+                    <input type=" text" class="form-control" id="shortDescription" placeholder="คำอธิบายแบบย่อ" />
+          </div>
+          <div class="form-group">
+            <label for="image"">คำอธิบายแบบยาว:</label>
+                  <input type=" text" class="form-control" id="longDescription" placeholder="คำอธิบายแบบยาว" />
+          </div>
+          <div class="form-group">
+            <label for="image"">สถานะของหนังสือ:</label>
+                <input type=" text" class="form-control" id="Status" placeholder="สถานะของหนังสือ" />
+          </div>
+          <div class="form-group">
+            <label for="image"">รายชื่อผู้แต่ง:</label>
+              <input type=" text" class="form-control" id="Authors" placeholder="รายชื่อผู้แต่ง" />
+          </div>
+          <div class="form-group">
+            <label for="image"">ประเภทหนังสือ:</label>
+            <input type=" text" class="form-control" id="Categories" placeholder="ประเภทหนังสือ" />
+          </div>
+          <a href="#" class="btn btn-success" onclick="add()">เพิ่ม</a>
+          <a href="index.html" class="btn btn-danger">ยกเลิก</a>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./add.js"></script>
+</body>
+
+</html>
